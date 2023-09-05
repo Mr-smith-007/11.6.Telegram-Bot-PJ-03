@@ -23,6 +23,8 @@ namespace _11._6.Telegram_Bot_PJ_03_.Controllers
         }
         public async Task Handle(CallbackQuery? callbackQuery, CancellationToken ct)
         {
+            Console.WriteLine($"Контроллер {GetType().Name} получил сообщение");
+
             if (callbackQuery?.Data == null)
                 return;
 
